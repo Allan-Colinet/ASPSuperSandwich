@@ -1,0 +1,26 @@
+﻿@model IEnumerable<SuperSandwich15000.Models.Sandwich>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Voici la liste des sandwichs</h1>
+<img src="~/img/CarteSandwich.png" width="100%" />
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Commande ton sandwich
+        </button>
+        <ul class="dropdown-menu">
+            @foreach (Sandwich item in Model)
+            {
+                <li>
+                    @Html.DisplayFor(modelItem => item.Nom)
+                    @Html.DisplayFor(modelItem => item.Prix)
+                <a type="button" class="btn btn-primary btn-sm" asp-controller="Sandwich" asp-action="CreerCommande" asp-route-id="@item.Id">Valider</a>
+                </li>
+            }
+        </ul>
+    </div>
+
+ 

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSandwich15000", "SuperSandwich15000\SuperSandwich15000.csproj", "{BDBFD77C-9F78-455B-9EAA-EBF316234DB6}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BDDSandwich", "BDDSandwich\BDDSandwich.sqlproj", "{D434131A-A903-4986-9CCF-774CE21F01CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDBFD77C-9F78-455B-9EAA-EBF316234DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDBFD77C-9F78-455B-9EAA-EBF316234DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDBFD77C-9F78-455B-9EAA-EBF316234DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDBFD77C-9F78-455B-9EAA-EBF316234DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D434131A-A903-4986-9CCF-774CE21F01CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D434131A-A903-4986-9CCF-774CE21F01CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D434131A-A903-4986-9CCF-774CE21F01CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D434131A-A903-4986-9CCF-774CE21F01CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D434131A-A903-4986-9CCF-774CE21F01CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D434131A-A903-4986-9CCF-774CE21F01CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E99F47B-B4FF-4CF0-BD04-D87F81DE6789}
+	EndGlobalSection
+EndGlobal

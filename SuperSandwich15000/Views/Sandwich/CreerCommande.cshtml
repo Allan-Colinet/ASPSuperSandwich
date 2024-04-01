@@ -1,0 +1,55 @@
+﻿@model SuperSandwich15000.Models.Commande
+
+@{
+    ViewData["Title"] = "CreerCommande";
+}
+
+<h1>CreerCommande</h1>
+
+<h4>Vous êtes en train de commander : @Model.sandwich.Nom</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreerCommande">
+            <div class="form-group" hidden>
+                <label asp-for="SandwichId" class="control-label"></label>
+                <input asp-for="SandwichId" class="form-control" />
+                <span asp-validation-for="SandwichId" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="PainGris"/> @Html.DisplayNameFor(model => model.PainGris)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Commentaire" class="control-label"></label>
+                <input asp-for="Commentaire" class="form-control"/>
+                <span asp-validation-for="Commentaire" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PourQui" class="control-label"></label>
+                <input asp-for="PourQui" class="form-control"/>
+                <span asp-validation-for="PourQui" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")"/>
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+     
